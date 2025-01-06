@@ -1,0 +1,1283 @@
+  ComponentFactory.Krypton.Docking.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+  ComponentFactory.Krypton.Docking.ToolboxBitmaps.KryptonDockableNavigator.bmp - Embedded, ContainedInManifestFile, 
+  ComponentFactory.Krypton.Docking.ToolboxBitmaps.KryptonDockableWorkspace.bmp - Embedded, ContainedInManifestFile, 
+  ComponentFactory.Krypton.Docking.ToolboxBitmaps.KryptonDockingManager.bmp - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly ComponentFactory.Krypton.Docking, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly ComponentFactory.Krypton.Navigator, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e: 
+	hash=None, flags=None
+Assembly ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ComponentFactory.Krypton.Docking.KryptonDockableNavigator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.KryptonNavigator
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Navigator.KryptonPageEventArgs] CellPageInserting: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelDropDownEventArgs] PageDropDownClicked: 
+  Methods:
+    add_CellPageInserting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellPageInserting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.KryptonDockspaceSlide: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonDockspace
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class ComponentFactory.Krypton.Docking.KryptonStorePage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.KryptonPage
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean LastVisibleSet 'get set' : 
+    System.String StoreName 'get ' : 
+  Methods:
+    get_LastVisibleSet(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_LastVisibleSet(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_StoreName(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.KryptonAutoHiddenSlidePanel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Toolkit.KryptonPanel
+    Void .ctor(System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.DockingEdge, ComponentFactory.Krypton.Docking.KryptonAutoHiddenPanel): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Windows.Forms.IMessageFilter
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockspace DockspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockspaceSeparator SeparatorControl 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+    ComponentFactory.Krypton.Navigator.IDragPageNotify DragPageNotify 'get set' : 
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Toolkit.SplitterMoveRectMenuArgs] SplitterMoveRect: 
+    System.Windows.Forms.SplitterEventHandler SplitterMoved: 
+    System.Windows.Forms.SplitterCancelEventHandler SplitterMoving: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNameEventArgs] PageCloseClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNameEventArgs] PageAutoHiddenClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelDropDownEventArgs] PageDropDownClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenShowingStateEventArgs] AutoHiddenShowingStateChanged: 
+  Methods:
+    add_SplitterMoveRect(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_SplitterMoveRect(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_SplitterMoved(SplitterEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SplitterMoved(SplitterEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SplitterMoving(SplitterCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SplitterMoving(SplitterCancelEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PageCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageAutoHiddenClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageAutoHiddenClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenShowingStateChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenShowingStateChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_SeparatorControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    get_DragPageNotify(): PrivateScope, Public, HideBySig, SpecialName
+    set_DragPageNotify(IDragPageNotify): PrivateScope, Public, HideBySig, SpecialName
+    HideUniqueName(): PrivateScope, Public, HideBySig
+    HideUniqueName(String): PrivateScope, Public, HideBySig
+    SlideOut(KryptonPage, KryptonAutoHiddenGroup, Boolean): PrivateScope, Public, HideBySig
+    SlideIn(): PrivateScope, Public, HideBySig
+    UpdateSize(Int32, Int32): PrivateScope, Public, HideBySig
+    PreFilterMessage(Message&): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, HasSecurity
+Class ComponentFactory.Krypton.Docking.KryptonAutoHiddenProxyPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.KryptonPage
+    Void .ctor(ComponentFactory.Krypton.Navigator.KryptonPage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+    System.String Text 'get set' : 
+    System.String TextTitle 'get set' : 
+    System.String TextDescription 'get set' : 
+    System.Drawing.Image ImageSmall 'get set' : 
+    System.Drawing.Image ImageMedium 'get set' : 
+    System.Drawing.Image ImageLarge 'get set' : 
+    System.Drawing.Image ToolTipImage 'get set' : 
+    System.Drawing.Color ToolTipImageTransparentColor 'get set' : 
+    System.String ToolTipTitle 'get set' : 
+    System.String ToolTipBody 'get set' : 
+    ComponentFactory.Krypton.Toolkit.LabelStyle ToolTipStyle 'get set' : 
+    ComponentFactory.Krypton.Toolkit.KryptonContextMenu KryptonContextMenu 'get set' : 
+    System.String UniqueName 'get set' : 
+    Int32 Flags 'get set' : 
+    Boolean LastVisibleSet 'get set' : 
+  Methods:
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TextTitle(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_TextTitle(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TextDescription(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_TextDescription(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImageSmall(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ImageSmall(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImageMedium(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ImageMedium(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ImageLarge(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ImageLarge(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ToolTipImage(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ToolTipImage(Image): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ToolTipImageTransparentColor(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ToolTipImageTransparentColor(Color): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ToolTipTitle(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ToolTipTitle(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ToolTipBody(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ToolTipBody(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_ToolTipStyle(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_ToolTipStyle(LabelStyle): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_KryptonContextMenu(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_KryptonContextMenu(KryptonContextMenu): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_UniqueName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_UniqueName(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetTextMapping(MapKryptonPageText): PrivateScope, Public, Virtual, HideBySig
+    GetImageMapping(MapKryptonPageImage): PrivateScope, Public, Virtual, HideBySig
+    get_Flags(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_Flags(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    SetFlags(KryptonPageFlags): PrivateScope, Public, Virtual, HideBySig
+    ClearFlags(KryptonPageFlags): PrivateScope, Public, Virtual, HideBySig
+    AreFlagsSet(KryptonPageFlags): PrivateScope, Public, Virtual, HideBySig
+    get_LastVisibleSet(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_LastVisibleSet(Boolean): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.KryptonDockableWorkspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonSpace
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockspaceSeparator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Toolkit.KryptonSeparator
+    Void .ctor(ComponentFactory.Krypton.Docking.DockingEdge, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonSpace: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ComponentFactory.Krypton.Workspace.KryptonWorkspace
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String CloseTooltip 'get set' : 
+    System.String PinTooltip 'get set' : 
+    System.String DropDownTooltip 'get set' : 
+    Boolean AutoHiddenHost 'get set' : 
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Workspace.WorkspaceCellEventArgs] CellGainsFocus: 
+    System.EventHandler`1[ComponentFactory.Krypton.Workspace.WorkspaceCellEventArgs] CellLosesFocus: 
+    System.EventHandler`1[ComponentFactory.Krypton.Navigator.KryptonPageEventArgs] CellPageInserting: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNameEventArgs] PageCloseClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNameEventArgs] PageAutoHiddenClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelDropDownEventArgs] PageDropDownClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNamesEventArgs] PagesDoubleClicked: 
+  Methods:
+    add_CellGainsFocus(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellGainsFocus(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CellLosesFocus(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellLosesFocus(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_CellPageInserting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_CellPageInserting(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageAutoHiddenClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageAutoHiddenClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageDropDownClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PagesDoubleClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PagesDoubleClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_CloseTooltip(): PrivateScope, Public, HideBySig, SpecialName
+    set_CloseTooltip(String): PrivateScope, Public, HideBySig, SpecialName
+    get_PinTooltip(): PrivateScope, Public, HideBySig, SpecialName
+    set_PinTooltip(String): PrivateScope, Public, HideBySig, SpecialName
+    get_DropDownTooltip(): PrivateScope, Public, HideBySig, SpecialName
+    set_DropDownTooltip(String): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoHiddenHost(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoHiddenHost(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    UpdateVisible(): PrivateScope, Public, HideBySig
+    UpdateVisible(Boolean): PrivateScope, Public, HideBySig
+    WritePageElement(XmlWriter, KryptonPage): PrivateScope, Public, Virtual, HideBySig
+    ReadPageElement(XmlReader, String, UniqueNameToPage): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonFloatspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonSpace
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonFloatingWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Toolkit.KryptonForm
+    Void .ctor(System.Windows.Forms.Form, ComponentFactory.Krypton.Docking.KryptonFloatspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatspace FloatspaceControl 'get ' : 
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNamesEventArgs] WindowCloseClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.ScreenAndOffsetEventArgs] WindowCaptionDragging: 
+  Methods:
+    add_WindowCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_WindowCloseClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_WindowCaptionDragging(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_WindowCaptionDragging(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.KryptonAutoHiddenPanel: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Toolkit.KryptonPanel
+    Void .ctor(ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetPreferredSize(Size): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonAutoHiddenGroup: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.KryptonNavigator
+    Void .ctor(ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.UniqueNameEventArgs] StoringPage: 
+  Methods:
+    add_StoringPage(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_StoringPage(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    StoreAllPages(): PrivateScope, Public, HideBySig
+    StorePages(String[]): PrivateScope, Public, HideBySig
+    RestorePages(KryptonPage[]): PrivateScope, Public, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonSpace
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.DockingDragTargetProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, ComponentFactory.Krypton.Docking.KryptonFloatingWindow, ComponentFactory.Krypton.Navigator.KryptonPageCollection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ComponentFactory.Krypton.Navigator.IDragTargetProvider
+  Methods:
+    GenerateDragTargets(PageDragEndData): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class ComponentFactory.Krypton.Docking.DockingDragManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.DragManager
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, System.Windows.Forms.Control): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ComponentFactory.Krypton.Docking.IFloatingMessages
+    System.Windows.Forms.IMessageFilter
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatingWindow FloatingWindow 'get set' : 
+    System.Drawing.Point FloatingWindowOffset 'get set' : 
+  Methods:
+    get_FloatingWindow(): PrivateScope, Public, HideBySig, SpecialName
+    set_FloatingWindow(KryptonFloatingWindow): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatingWindowOffset(): PrivateScope, Public, HideBySig, SpecialName
+    set_FloatingWindowOffset(Point): PrivateScope, Public, HideBySig, SpecialName
+    DragStart(Point, PageDragEndData): PrivateScope, Public, Virtual, HideBySig
+    DragMove(Point): PrivateScope, Public, Virtual, HideBySig
+    DragEnd(Point): PrivateScope, Public, Virtual, HideBySig
+    DragQuit(): PrivateScope, Public, Virtual, HideBySig
+    OnKEYDOWN(Message&): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnMOUSEMOVE(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    OnLBUTTONUP(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PreFilterMessage(Message&): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, HasSecurity
+Class ComponentFactory.Krypton.Docking.DragTargetNull: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.DragTarget
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    PerformDrop(Point, PageDragEndData): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.DragTargetControlEdge: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Navigator.DragTarget
+    Void .ctor(System.Drawing.Rectangle, System.Drawing.Rectangle, System.Drawing.Rectangle, ComponentFactory.Krypton.Navigator.DragTargetHint, ComponentFactory.Krypton.Docking.KryptonDockingControl, ComponentFactory.Krypton.Navigator.KryptonPageFlags, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Toolkit.VisualOrientation Edge 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingControl ControlElement 'get ' : 
+  Methods:
+    get_Edge(): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlElement(): PrivateScope, Public, HideBySig, SpecialName
+    IsMatch(Point, PageDragEndData): PrivateScope, Public, Virtual, HideBySig
+    PerformDrop(Point, PageDragEndData): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.DockingElementClosedCollection: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElement
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [Int32] 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [System.String] 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig
+    Contains(IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class ComponentFactory.Krypton.Docking.DockingElementOpenCollection: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Add(IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Remove(IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class ComponentFactory.Krypton.Docking.DockingElement: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.ComponentModel.Component
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    ComponentFactory.Krypton.Docking.IDockingElement
+    System.Collections.Generic.IEnumerable`1[ComponentFactory.Krypton.Docking.IDockingElement]
+    System.Collections.IEnumerable
+  Properties:
+    System.String Name 'get ' : 
+    System.String Path 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'get set' : 
+    Boolean HasDockManager 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingManager DockingManager 'get ' : 
+    Int32 Count 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [Int32] 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [System.String] 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Path(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ResolvePath(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Parent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateAction(DockingPropogateAction, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateAction(DockingPropogateAction, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateBoolState(DockingPropogateBoolState, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateIntState(DockingPropogateIntState, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogatePageState(DockingPropogatePageState, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogatePageList(DockingPropogatePageList, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateCellList(DockingPropogateCellList, KryptonWorkspaceCellList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindDockingFloating(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindDockingEdgeDocked(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindDockingEdgeAutoHidden(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindDockingWorkspace(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindDockingNavigator(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DemandPagesNotBePresent(KryptonPage[]): PrivateScope, Public, HideBySig
+    DemandDockingManager(): PrivateScope, Public, HideBySig
+    get_HasDockManager(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockingManager(): PrivateScope, Public, HideBySig, SpecialName
+    GetParentType(Type): PrivateScope, Public, HideBySig
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class ComponentFactory.Krypton.Docking.KryptonDockingNavigator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, ComponentFactory.Krypton.Docking.KryptonDockableNavigator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockableNavigator DockableNavigatorControl 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'set' : 
+    Int32 VisiblePages 'get ' : 
+  Methods:
+    get_DockableNavigatorControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Append(KryptonPage): PrivateScope, Public, HideBySig
+    Append(KryptonPage[]): PrivateScope, Public, HideBySig
+    ShowPage(KryptonPage): PrivateScope, Public, HideBySig
+    ShowPage(String): PrivateScope, Public, HideBySig
+    ShowPages(KryptonPage[]): PrivateScope, Public, HideBySig
+    ShowPages(String[]): PrivateScope, Public, HideBySig
+    ShowAllPages(): PrivateScope, Public, HideBySig
+    HidePage(KryptonPage): PrivateScope, Public, HideBySig
+    HidePage(String): PrivateScope, Public, HideBySig
+    HidePages(KryptonPage[]): PrivateScope, Public, HideBySig
+    HidePages(String[]): PrivateScope, Public, HideBySig
+    HideAllPages(): PrivateScope, Public, HideBySig
+    RemovePage(String, Boolean): PrivateScope, Public, HideBySig
+    RemovePages(KryptonPage[], Boolean): PrivateScope, Public, HideBySig
+    RemovePages(String[], Boolean): PrivateScope, Public, HideBySig
+    RemoveAllPages(Boolean): PrivateScope, Public, HideBySig
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateBoolState(DockingPropogateBoolState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageState(DockingPropogatePageState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageList(DockingPropogatePageList, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingNavigator(String): PrivateScope, Public, Virtual, HideBySig
+    get_VisiblePages(): PrivateScope, Public, HideBySig, SpecialName
+    SelectPage(String): PrivateScope, Public, HideBySig
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingWorkspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonDockingSpace
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, ComponentFactory.Krypton.Docking.KryptonDockableWorkspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockableWorkspace DockableWorkspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'set' : 
+  Methods:
+    get_DockableWorkspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    ShowPage(KryptonPage): PrivateScope, Public, HideBySig
+    ShowPage(String): PrivateScope, Public, HideBySig
+    ShowPages(KryptonPage[]): PrivateScope, Public, HideBySig
+    ShowPages(String[]): PrivateScope, Public, HideBySig
+    ShowAllPages(): PrivateScope, Public, HideBySig
+    HidePage(KryptonPage): PrivateScope, Public, HideBySig
+    HidePage(String): PrivateScope, Public, HideBySig
+    HidePages(KryptonPage[]): PrivateScope, Public, HideBySig
+    HidePages(String[]): PrivateScope, Public, HideBySig
+    HideAllPages(): PrivateScope, Public, HideBySig
+    RemovePage(String, Boolean): PrivateScope, Public, HideBySig
+    RemovePages(KryptonPage[], Boolean): PrivateScope, Public, HideBySig
+    RemovePages(String[], Boolean): PrivateScope, Public, HideBySig
+    RemoveAllPages(Boolean): PrivateScope, Public, HideBySig
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingWorkspace(String): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingSpace: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'set' : 
+    Int32 VisiblePages 'get ' : 
+  Methods:
+    Append(KryptonPage): PrivateScope, Public, HideBySig
+    Append(KryptonPage[]): PrivateScope, Public, HideBySig
+    CellAppend(KryptonWorkspaceCell, KryptonPage): PrivateScope, Public, HideBySig
+    CellAppend(KryptonWorkspaceCell, KryptonPage[]): PrivateScope, Public, HideBySig
+    CellInsert(KryptonWorkspaceCell, Int32, KryptonPage): PrivateScope, Public, HideBySig
+    CellInsert(KryptonWorkspaceCell, Int32, KryptonPage[]): PrivateScope, Public, HideBySig
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateAction(DockingPropogateAction, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateBoolState(DockingPropogateBoolState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageState(DockingPropogatePageState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageList(DockingPropogatePageList, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+    PropogateCellList(DockingPropogateCellList, KryptonWorkspaceCellList): PrivateScope, Public, Virtual, HideBySig
+    get_VisiblePages(): PrivateScope, Public, HideBySig, SpecialName
+    CellVisiblePages(String): PrivateScope, Public, HideBySig
+    CellForPage(String): PrivateScope, Public, HideBySig
+    SelectPage(String): PrivateScope, Public, HideBySig
+    UpdateStrings(): PrivateScope, Public, HideBySig
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingFloatspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonDockingSpace
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatspace FloatspaceControl 'get ' : 
+  Methods:
+    get_FloatspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingFloatingWindow: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.Windows.Forms.Form, ComponentFactory.Krypton.Docking.KryptonDockingFloatspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'set' : 
+    ComponentFactory.Krypton.Docking.KryptonFloatingWindow FloatingWindow 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingFloatspace FloatspaceElement 'get ' : 
+  Methods:
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_FloatingWindow(): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    CellForPage(String): PrivateScope, Public, HideBySig
+    SelectPage(String): PrivateScope, Public, HideBySig
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingFloating: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.Windows.Forms.Form): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Form OwnerForm 'get ' : 
+  Methods:
+    get_OwnerForm(): PrivateScope, Public, HideBySig, SpecialName
+    AddFloatingWindow(): PrivateScope, Public, HideBySig
+    AddFloatingWindow(String): PrivateScope, Public, HideBySig
+    FindDockingFloating(String): PrivateScope, Public, Virtual, HideBySig
+    FloatingWindowForStorePage(String): PrivateScope, Public, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.DockingEdge Edge 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonAutoHiddenGroup AutoHiddenGroupControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingEdgeDocked EdgeDockedElement 'get ' : 
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Navigator.KryptonPageEventArgs] PageClicked: 
+    System.EventHandler`1[ComponentFactory.Krypton.Navigator.KryptonPageEventArgs] PageHoverStart: 
+    System.EventHandler`1[System.EventArgs] PageHoverEnd: 
+  Methods:
+    add_PageClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageClicked(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageHoverStart(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageHoverStart(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageHoverEnd(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageHoverEnd(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    get_Edge(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoHiddenGroupControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeDockedElement(): PrivateScope, Public, HideBySig, SpecialName
+    Append(KryptonPage): PrivateScope, Public, HideBySig
+    Append(KryptonPage[]): PrivateScope, Public, HideBySig
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateAction(DockingPropogateAction, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateBoolState(DockingPropogateBoolState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageState(DockingPropogatePageState, String): PrivateScope, Public, Virtual, HideBySig
+    PropogatePageList(DockingPropogatePageList, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    VisiblePages(): PrivateScope, Public, HideBySig
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingDockspace: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.KryptonDockingSpace
+    Void .ctor(System.String, ComponentFactory.Krypton.Docking.DockingEdge, System.Drawing.Size): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockspace DockspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingEdgeAutoHidden EdgeAutoHiddenElement 'get ' : 
+  Events:
+    System.EventHandler HasVisibleCells: 
+    System.EventHandler HasNoVisibleCells: 
+  Methods:
+    add_HasVisibleCells(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HasVisibleCells(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_HasNoVisibleCells(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_HasNoVisibleCells(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeAutoHiddenElement(): PrivateScope, Public, HideBySig, SpecialName
+    PropogateAction(DockingPropogateAction, Int32): PrivateScope, Public, Virtual, HideBySig
+    PropogateIntState(DockingPropogateIntState, Int32&): PrivateScope, Public, Virtual, HideBySig
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingEdgeAutoHidden: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Control Control 'get ' : 
+    ComponentFactory.Krypton.Docking.DockingEdge Edge 'get ' : 
+  Methods:
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    get_Edge(): PrivateScope, Public, HideBySig, SpecialName
+    AppendAutoHiddenGroup(): PrivateScope, Public, HideBySig
+    AppendAutoHiddenGroup(String): PrivateScope, Public, HideBySig
+    InsertAutoHiddenGroup(Int32): PrivateScope, Public, HideBySig
+    InsertAutoHiddenGroup(Int32, String): PrivateScope, Public, HideBySig
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateAction(DockingPropogateAction, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig
+    FindDockingEdgeAutoHidden(String): PrivateScope, Public, Virtual, HideBySig
+    SlidePageOut(KryptonPage, Boolean): PrivateScope, Public, HideBySig
+    SlidePageOut(String, Boolean): PrivateScope, Public, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingEdgeDocked: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Control Control 'get ' : 
+    ComponentFactory.Krypton.Docking.DockingEdge Edge 'get ' : 
+  Methods:
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    get_Edge(): PrivateScope, Public, HideBySig, SpecialName
+    AppendDockspace(): PrivateScope, Public, HideBySig
+    AppendDockspace(String): PrivateScope, Public, HideBySig
+    AppendDockspace(String, Size): PrivateScope, Public, HideBySig
+    InsertDockspace(Int32): PrivateScope, Public, HideBySig
+    InsertDockspace(Int32, String): PrivateScope, Public, HideBySig
+    InsertDockspace(Int32, String, Size): PrivateScope, Public, HideBySig
+    FindDockingEdgeDocked(String): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingEdge: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementClosedCollection
+    Void .ctor(System.String, System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.DockingEdge): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Control Control 'get ' : 
+    ComponentFactory.Krypton.Docking.DockingEdge Edge 'get ' : 
+  Methods:
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    get_Edge(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.KryptonDockingManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementOpenCollection
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.DockingManagerStrings Strings 'get ' : 
+    ComponentFactory.Krypton.Docking.DockingCloseRequest DefaultCloseRequest 'get set' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage[] Pages 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage[] PagesDocked 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage[] PagesAutoHidden 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage[] PagesFloating 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage[] PagesWorkspace 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell[] Cells 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell[] CellsDocked 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell[] CellsFloating 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell[] CellsWorkspace 'get ' : 
+  Events:
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CloseRequestEventArgs] PageCloseRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs] PageDockedRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs] PageAutoHiddenRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs] PageFloatingRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs] PageWorkspaceRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs] PageNavigatorRequest: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.ContextPageEventArgs] ShowPageContextMenu: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.ContextPageEventArgs] ShowWorkspacePageContextMenu: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockGlobalSavingEventArgs] GlobalSaving: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockGlobalLoadingEventArgs] GlobalLoading: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockPageSavingEventArgs] PageSaving: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockPageLoadingEventArgs] PageLoading: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.PagesEventArgs] OrphanedPages: 
+    System.EventHandler`1[ComponentFactory.Krypton.Workspace.RecreateLoadingPageEventArgs] RecreateLoadingPage: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenSeparatorResizeEventArgs] AutoHiddenSeparatorResize: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceSeparatorResizeEventArgs] DockspaceSeparatorResize: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenGroupEventArgs] AutoHiddenGroupAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenGroupEventArgs] AutoHiddenGroupRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenGroupPanelEventArgs] AutoHiddenGroupPanelAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenGroupPanelEventArgs] AutoHiddenGroupPanelRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableWorkspaceEventArgs] DockableWorkspaceAdded: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableWorkspaceEventArgs] DockableWorkspaceRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableNavigatorEventArgs] DockableNavigatorAdded: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableNavigatorEventArgs] DockableNavigatorRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableWorkspaceCellEventArgs] DockableWorkspaceCellAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockableWorkspaceCellEventArgs] DockableWorkspaceCellRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceEventArgs] DockspaceAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceEventArgs] DockspaceRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceCellEventArgs] DockspaceCellAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceCellEventArgs] DockspaceCellRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceSeparatorEventArgs] DockspaceSeparatorAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.DockspaceSeparatorEventArgs] DockspaceSeparatorRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatspaceEventArgs] FloatspaceAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatspaceEventArgs] FloatspaceRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs] FloatspaceCellAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs] FloatspaceCellRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatingWindowEventArgs] FloatingWindowAdding: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.FloatingWindowEventArgs] FloatingWindowRemoved: 
+    System.EventHandler`1[ComponentFactory.Krypton.Docking.AutoHiddenShowingStateEventArgs] AutoHiddenShowingStateChanged: 
+    System.EventHandler DoDragDropEnd: 
+    System.EventHandler DoDragDropQuit: 
+  Methods:
+    FindPageLocation(KryptonPage): PrivateScope, Public, HideBySig
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig
+    FindPageElement(KryptonPage): PrivateScope, Public, HideBySig
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig
+    FindStorePageElement(DockingLocation, KryptonPage): PrivateScope, Public, HideBySig
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingFloating(String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingEdgeDocked(String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingEdgeAutoHidden(String): PrivateScope, Public, Virtual, HideBySig
+    FindDockingWorkspace(String): PrivateScope, Public, Virtual, HideBySig
+    get_DefaultCloseRequest(): PrivateScope, Public, HideBySig, SpecialName
+    set_DefaultCloseRequest(DockingCloseRequest): PrivateScope, Public, HideBySig, SpecialName
+    CloseRequest(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeAutoHiddenRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeDockedRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeFloatingRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeWorkspaceRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeNavigatorRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPageContextMenuRequest(KryptonPage, KryptonContextMenu): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SwitchDockedCellToAutoHiddenGroupRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SwitchDockedToFloatingWindowRequest(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SwitchFloatingToDockedRequest(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SwitchFloatingToFloatingWindowRequest(String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SwitchAutoHiddenGroupToDockedCellRequest(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDockspace(String, DockingEdge, KryptonPage[], KryptonPage[][]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddAutoHiddenGroup(String, DockingEdge, KryptonPage[], KryptonPage[][]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFloatingWindow(String, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFloatingWindow(String, KryptonPage[], Size): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFloatingWindow(String, KryptonPage[], Point): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddFloatingWindow(String, KryptonPage[], Point, Size): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddToWorkspace(String, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddToNavigator(String, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InsertDockspace(String, DockingEdge, Int32, KryptonPage[], KryptonPage[][]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InsertAutoHiddenGroup(String, DockingEdge, Int32, KryptonPage[], KryptonPage[][]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoDragDrop(Point, Point, Control, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoDragDrop(Point, Point, Control, KryptonDockingFloatingWindow): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveConfigToArray(): PrivateScope, Public, HideBySig
+    SaveConfigToArray(Encoding): PrivateScope, Public, HideBySig
+    SaveConfigToFile(String): PrivateScope, Public, HideBySig
+    SaveConfigToFile(String, Encoding): PrivateScope, Public, HideBySig
+    SaveConfigToStream(Stream, Encoding): PrivateScope, Public, HideBySig
+    SaveConfigToXml(XmlWriter): PrivateScope, Public, HideBySig
+    LoadConfigFromArray(Byte[]): PrivateScope, Public, HideBySig
+    LoadConfigFromArray(String): PrivateScope, Public, HideBySig
+    LoadConfigFromFile(String): PrivateScope, Public, HideBySig
+    LoadConfigFromStream(Stream): PrivateScope, Public, HideBySig
+    LoadConfigFromXml(XmlReader): PrivateScope, Public, HideBySig
+    get_Pages(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PagesDocked(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PagesAutoHidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PagesFloating(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PagesWorkspace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Cells(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CellsDocked(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CellsFloating(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CellsWorkspace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_PageCloseRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageCloseRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageDockedRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageDockedRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageAutoHiddenRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageAutoHiddenRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageFloatingRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageFloatingRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageWorkspaceRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageWorkspaceRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageNavigatorRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageNavigatorRequest(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ShowPageContextMenu(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ShowPageContextMenu(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_ShowWorkspacePageContextMenu(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_ShowWorkspacePageContextMenu(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_GlobalSaving(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_GlobalSaving(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_GlobalLoading(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_GlobalLoading(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageSaving(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageSaving(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_PageLoading(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_PageLoading(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_OrphanedPages(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_OrphanedPages(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_RecreateLoadingPage(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_RecreateLoadingPage(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenSeparatorResize(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenSeparatorResize(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceSeparatorResize(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceSeparatorResize(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenGroupAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenGroupAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenGroupRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenGroupRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenGroupPanelAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenGroupPanelAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenGroupPanelRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenGroupPanelRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableWorkspaceAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableWorkspaceAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableWorkspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableWorkspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableNavigatorAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableNavigatorAdded(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableNavigatorRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableNavigatorRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableWorkspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableWorkspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockableWorkspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockableWorkspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceSeparatorAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceSeparatorAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DockspaceSeparatorRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_DockspaceSeparatorRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatspaceAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatspaceAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatspaceRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatspaceCellAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatspaceCellRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatingWindowAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatingWindowAdding(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_FloatingWindowRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_FloatingWindowRemoved(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_AutoHiddenShowingStateChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    remove_AutoHiddenShowingStateChanged(EventHandler`1): PrivateScope, Public, HideBySig, SpecialName
+    add_DoDragDropEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DoDragDropEnd(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_DoDragDropQuit(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DoDragDropQuit(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    ManageControl(Control): PrivateScope, Public, HideBySig
+    ManageControl(Control, KryptonDockingNavigator): PrivateScope, Public, HideBySig
+    ManageControl(Control, KryptonDockingWorkspace): PrivateScope, Public, HideBySig
+    ManageControl(String, Control): PrivateScope, Public, HideBySig
+    ManageControl(String, Control, KryptonDockingNavigator): PrivateScope, Public, HideBySig
+    ManageControl(String, Control, KryptonDockingWorkspace): PrivateScope, Public, HideBySig
+    ManageFloating(Form): PrivateScope, Public, HideBySig
+    ManageFloating(String, Form): PrivateScope, Public, HideBySig
+    ManageWorkspace(KryptonDockableWorkspace): PrivateScope, Public, HideBySig
+    ManageWorkspace(String, KryptonDockableWorkspace): PrivateScope, Public, HideBySig
+    ManageWorkspace(String, String, KryptonDockableWorkspace): PrivateScope, Public, HideBySig
+    ManageNavigator(KryptonDockableNavigator): PrivateScope, Public, HideBySig
+    ManageNavigator(String, KryptonDockableNavigator): PrivateScope, Public, HideBySig
+    ManageNavigator(String, String, KryptonDockableNavigator): PrivateScope, Public, HideBySig
+    get_Strings(): PrivateScope, Public, HideBySig, SpecialName
+    ResolvePath(String): PrivateScope, Public, Virtual, HideBySig
+    ShowPage(KryptonPage): PrivateScope, Public, HideBySig
+    ShowPage(String): PrivateScope, Public, HideBySig
+    ShowPages(KryptonPage[]): PrivateScope, Public, HideBySig
+    ShowPages(String[]): PrivateScope, Public, HideBySig
+    ShowAllPages(): PrivateScope, Public, HideBySig
+    HidePage(KryptonPage): PrivateScope, Public, HideBySig
+    HidePage(String): PrivateScope, Public, HideBySig
+    HidePages(KryptonPage[]): PrivateScope, Public, HideBySig
+    HidePages(String[]): PrivateScope, Public, HideBySig
+    HideAllPages(): PrivateScope, Public, HideBySig
+    IsPageShowing(KryptonPage): PrivateScope, Public, HideBySig
+    IsPageShowing(String): PrivateScope, Public, HideBySig
+    RemovePage(KryptonPage, Boolean): PrivateScope, Public, HideBySig
+    RemovePage(String, Boolean): PrivateScope, Public, HideBySig
+    RemovePages(KryptonPage[], Boolean): PrivateScope, Public, HideBySig
+    RemovePages(String[], Boolean): PrivateScope, Public, HideBySig
+    RemoveAllPages(Boolean): PrivateScope, Public, HideBySig
+    ContainsPage(KryptonPage): PrivateScope, Public, HideBySig
+    ContainsPage(String): PrivateScope, Public, HideBySig
+    PageForUniqueName(String): PrivateScope, Public, HideBySig
+    StorePage(KryptonPage): PrivateScope, Public, HideBySig
+    StorePage(String): PrivateScope, Public, HideBySig
+    StorePages(KryptonPage[]): PrivateScope, Public, HideBySig
+    StorePages(String[]): PrivateScope, Public, HideBySig
+    StoreAllPages(): PrivateScope, Public, HideBySig
+    ClearStoredPages(KryptonPage[]): PrivateScope, Public, HideBySig
+    ClearStoredPages(String[]): PrivateScope, Public, HideBySig
+    ClearAllStoredPages(): PrivateScope, Public, HideBySig
+Class ComponentFactory.Krypton.Docking.KryptonDockingControl: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockingElementOpenCollection
+    Void .ctor(System.String, System.Windows.Forms.Control): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.KryptonDockingNavigator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Windows.Forms.Control, ComponentFactory.Krypton.Docking.KryptonDockingWorkspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Windows.Forms.Control Control 'get ' : 
+    System.Drawing.Size InnerMinimum 'get set' : 
+  Methods:
+    get_Control(): PrivateScope, Public, HideBySig, SpecialName
+    get_InnerMinimum(): PrivateScope, Public, HideBySig, SpecialName
+    set_InnerMinimum(Size): PrivateScope, Public, HideBySig, SpecialName
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig
+Class ComponentFactory.Krypton.Docking.AutoHiddenGroupEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonAutoHiddenGroup, ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonAutoHiddenGroup AutoHiddenGroupControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingAutoHiddenGroup AutoHiddenGroupElement 'get ' : 
+  Methods:
+    get_AutoHiddenGroupControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoHiddenGroupElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.AutoHiddenGroupPanelEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonAutoHiddenPanel, ComponentFactory.Krypton.Docking.KryptonDockingEdgeAutoHidden): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonAutoHiddenPanel AutoHiddenPanelControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingEdgeAutoHidden EdgeAutoHiddenElement 'get ' : 
+  Methods:
+    get_AutoHiddenPanelControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_EdgeAutoHiddenElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.AutoHiddenSeparatorResizeEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Toolkit.KryptonSeparator, ComponentFactory.Krypton.Docking.KryptonDockspace, ComponentFactory.Krypton.Navigator.KryptonPage, System.Drawing.Rectangle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Toolkit.KryptonSeparator SeparatorControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockspace DockspaceControl 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+    System.Drawing.Rectangle ResizeRect 'get set' : 
+  Methods:
+    get_SeparatorControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    get_ResizeRect(): PrivateScope, Public, HideBySig, SpecialName
+    set_ResizeRect(Rectangle): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.CloseRequestEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.UniqueNameEventArgs
+    Void .ctor(System.String, ComponentFactory.Krypton.Docking.DockingCloseRequest): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.DockingCloseRequest CloseRequest 'get set' : 
+  Methods:
+    get_CloseRequest(): PrivateScope, Public, HideBySig, SpecialName
+    set_CloseRequest(DockingCloseRequest): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.CancelUniqueNameEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.UniqueNameEventArgs
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Cancel 'get set' : 
+  Methods:
+    get_Cancel(): PrivateScope, Public, HideBySig, SpecialName
+    set_Cancel(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.CancelDropDownEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(ComponentFactory.Krypton.Toolkit.KryptonContextMenu, ComponentFactory.Krypton.Navigator.KryptonPage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Toolkit.KryptonContextMenu KryptonContextMenu 'get ' : 
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+  Methods:
+    get_KryptonContextMenu(): PrivateScope, Public, HideBySig, SpecialName
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.ContextPageEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.CancelEventArgs
+    Void .ctor(ComponentFactory.Krypton.Navigator.KryptonPage, ComponentFactory.Krypton.Toolkit.KryptonContextMenu, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+    ComponentFactory.Krypton.Toolkit.KryptonContextMenu KryptonContextMenu 'get ' : 
+  Methods:
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    get_KryptonContextMenu(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.AutoHiddenShowingStateEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Navigator.KryptonPage, ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+    ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState NewState 'get ' : 
+  Methods:
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+    get_NewState(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockableNavigatorEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockableNavigator, ComponentFactory.Krypton.Docking.KryptonDockingNavigator): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockableNavigator DockableNavigatorControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingNavigator DockingNavigatorElement 'get ' : 
+  Methods:
+    get_DockableNavigatorControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockingNavigatorElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockPageSavingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockGlobalSavingEventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, System.Xml.XmlWriter, ComponentFactory.Krypton.Navigator.KryptonPage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+  Methods:
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockPageLoadingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockGlobalLoadingEventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, System.Xml.XmlReader, ComponentFactory.Krypton.Navigator.KryptonPage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPage Page 'get ' : 
+  Methods:
+    get_Page(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.PagesEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Navigator.KryptonPageCollection): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Navigator.KryptonPageCollection Pages 'get ' : 
+  Methods:
+    get_Pages(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.ScreenAndOffsetEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.Drawing.Point, System.Drawing.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Point ScreenPoint 'get ' : 
+    System.Drawing.Point ElementOffset 'get ' : 
+  Methods:
+    get_ScreenPoint(): PrivateScope, Public, HideBySig, SpecialName
+    get_ElementOffset(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.UniqueNamesEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String[] UniqueNames 'get ' : 
+  Methods:
+    get_UniqueNames(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.StorePageEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonStorePage): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonStorePage StorePage 'get ' : 
+  Methods:
+    get_StorePage(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.UniqueNameEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String UniqueName 'get ' : 
+  Methods:
+    get_UniqueName(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockspaceSeparatorResizeEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Docking.DockspaceSeparatorEventArgs
+    Void .ctor(ComponentFactory.Krypton.Toolkit.KryptonSeparator, ComponentFactory.Krypton.Docking.KryptonDockingDockspace, System.Drawing.Rectangle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Drawing.Rectangle ResizeRect 'get set' : 
+  Methods:
+    get_ResizeRect(): PrivateScope, Public, HideBySig, SpecialName
+    set_ResizeRect(Rectangle): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockableWorkspaceEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockableWorkspace, ComponentFactory.Krypton.Docking.KryptonDockingWorkspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockableWorkspace DockableWorkspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingWorkspace DockingWorkspaceElement 'get ' : 
+  Methods:
+    get_DockableWorkspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockingWorkspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockableWorkspaceCellEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockableWorkspace, ComponentFactory.Krypton.Docking.KryptonDockingWorkspace, ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockableWorkspace DockableWorkspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingWorkspace WorkspaceElement 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell CellControl 'get ' : 
+  Methods:
+    get_DockableWorkspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_WorkspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+    get_CellControl(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockspaceEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockspace, ComponentFactory.Krypton.Docking.KryptonDockingDockspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockspace DockspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingDockspace DockspaceElement 'get ' : 
+  Methods:
+    get_DockspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.FloatspaceEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonFloatspace, ComponentFactory.Krypton.Docking.KryptonDockingFloatspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatspace FloatspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingFloatspace FloatspaceElement 'get ' : 
+  Methods:
+    get_FloatspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.FloatspaceCellEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonFloatspace, ComponentFactory.Krypton.Docking.KryptonDockingFloatspace, ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatspace FloatspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingFloatspace FloatspaceElement 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell CellControl 'get ' : 
+  Methods:
+    get_FloatspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+    get_CellControl(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.FloatingWindowEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonFloatingWindow, ComponentFactory.Krypton.Docking.KryptonDockingFloatingWindow): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonFloatingWindow FloatingWindow 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingFloatingWindow FloatingWindowElement 'get ' : 
+  Methods:
+    get_FloatingWindow(): PrivateScope, Public, HideBySig, SpecialName
+    get_FloatingWindowElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockspaceSeparatorEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Toolkit.KryptonSeparator, ComponentFactory.Krypton.Docking.KryptonDockingDockspace): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Toolkit.KryptonSeparator SeparatorControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingDockspace DockspaceElement 'get ' : 
+  Methods:
+    get_SeparatorControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockspaceCellEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockspace, ComponentFactory.Krypton.Docking.KryptonDockingDockspace, ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockspace DockspaceControl 'get ' : 
+    ComponentFactory.Krypton.Docking.KryptonDockingDockspace DockspaceElement 'get ' : 
+    ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell CellControl 'get ' : 
+  Methods:
+    get_DockspaceControl(): PrivateScope, Public, HideBySig, SpecialName
+    get_DockspaceElement(): PrivateScope, Public, HideBySig, SpecialName
+    get_CellControl(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockGlobalLoadingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, System.Xml.XmlReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockingManager DockingManager 'get ' : 
+    System.Xml.XmlReader XmlReader 'get ' : 
+  Methods:
+    get_DockingManager(): PrivateScope, Public, HideBySig, SpecialName
+    get_XmlReader(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockGlobalSavingEventArgs: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.EventArgs
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager, System.Xml.XmlWriter): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    ComponentFactory.Krypton.Docking.KryptonDockingManager DockingManager 'get ' : 
+    System.Xml.XmlWriter XmlWriter 'get ' : 
+  Methods:
+    get_DockingManager(): PrivateScope, Public, HideBySig, SpecialName
+    get_XmlWriter(): PrivateScope, Public, HideBySig, SpecialName
+Class ComponentFactory.Krypton.Docking.DockingMultiUpdate: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(ComponentFactory.Krypton.Docking.IDockingElement): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class ComponentFactory.Krypton.Docking.DockingHelper: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    DockStyleFromDockEdge(DockingEdge, Boolean): PrivateScope, Public, Static, HideBySig
+    OrientationFromDockEdge(DockingEdge): PrivateScope, Public, Static, HideBySig
+    InnerRectangle(Control): PrivateScope, Public, Static, HideBySig
+Interface ComponentFactory.Krypton.Docking.IDockingElement: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[ComponentFactory.Krypton.Docking.IDockingElement]
+    System.Collections.IEnumerable
+  Properties:
+    System.String Name 'get ' : 
+    System.String Path 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Parent 'get set' : 
+    Int32 Count 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [Int32] 'get ' : 
+    ComponentFactory.Krypton.Docking.IDockingElement Item [System.String] 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Path(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ResolvePath(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Parent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Parent(IDockingElement): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    PropogateAction(DockingPropogateAction, String[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateAction(DockingPropogateAction, KryptonPage[]): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateAction(DockingPropogateAction, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateBoolState(DockingPropogateBoolState, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateIntState(DockingPropogateIntState, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateDragTargets(KryptonFloatingWindow, PageDragEndData, DragTargetList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogatePageState(DockingPropogatePageState, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogatePageList(DockingPropogatePageList, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PropogateCellList(DockingPropogateCellList, KryptonWorkspaceCellList): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindPageLocation(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindPageElement(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindStorePageElement(DockingLocation, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindDockingFloating(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindDockingEdgeDocked(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindDockingEdgeAutoHidden(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindDockingWorkspace(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindDockingNavigator(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveElementToXml(XmlWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadElementFromXml(XmlReader, KryptonPageCollection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Item(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface ComponentFactory.Krypton.Docking.IFloatingMessages: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    OnKEYDOWN(Message&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnMOUSEMOVE(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnLBUTTONUP(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct ComponentFactory.Krypton.Docking.DockingEdge: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingEdge Left = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingEdge Right = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingEdge Top = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingEdge Bottom = 3 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingCloseRequest: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingCloseRequest None = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingCloseRequest RemovePage = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingCloseRequest RemovePageAndDispose = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingCloseRequest HidePage = 3 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingLocation: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingLocation AutoHidden = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation Docked = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation Floating = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation Workspace = 3 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation Navigator = 4 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation Custom = 5 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingLocation None = 6 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState Hidden = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState SlidingOut = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState SlidingIn = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingAutoHiddenShowState Showing = 3 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogateAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogateAction Null = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction StartUpdate = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction EndUpdate = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ShowPages = 3 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ShowAllPages = 4 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction HidePages = 5 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction HideAllPages = 6 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction StorePages = 7 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction StoreAllPages = 8 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RestorePages = 9 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearAutoHiddenStoredPages = 10 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearDockedStoredPages = 11 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearFloatingStoredPages = 12 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearFillerStoredPages = 13 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearStoredPages = 14 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction ClearAllStoredPages = 15 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RemovePages = 16 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RemoveAndDisposePages = 17 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RemoveAllPages = 18 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RemoveAndDisposeAllPages = 19 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction Loading = 20 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction RepositionDockspace = 21 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction StringChanged = 22 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateAction DebugOutput = 23 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogateBoolState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogateBoolState ContainsPage = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateBoolState ContainsStorePage = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateBoolState IsPageShowing = 2 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogateIntState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogateIntState DockspaceOrder = 0 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogatePageState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogatePageState PageForUniqueName = 0 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogatePageList: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogatePageList All = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogatePageList Docked = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogatePageList AutoHidden = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogatePageList Floating = 3 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogatePageList Filler = 4 : Public, Static, Literal, HasDefault
+Struct ComponentFactory.Krypton.Docking.DockingPropogateCellList: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ComponentFactory.Krypton.Docking.DockingPropogateCellList All = 0 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateCellList Docked = 1 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateCellList Floating = 2 : Public, Static, Literal, HasDefault
+    ComponentFactory.Krypton.Docking.DockingPropogateCellList Workspace = 3 : Public, Static, Literal, HasDefault
+Class ComponentFactory.Krypton.Docking.DockingManagerStrings: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ComponentFactory.Krypton.Toolkit.Storage
+    Void .ctor(ComponentFactory.Krypton.Docking.KryptonDockingManager): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsDefault 'get ' : 
+    System.String TextAutoHide 'get set' : 
+    System.String TextClose 'get set' : 
+    System.String TextCloseAllButThis 'get set' : 
+    System.String TextDock 'get set' : 
+    System.String TextFloat 'get set' : 
+    System.String TextHide 'get set' : 
+    System.String TextTabbedDocument 'get set' : 
+    System.String TextWindowLocation 'get set' : 
+  Events:
+    System.ComponentModel.PropertyChangedEventHandler PropertyChanged: 
+  Methods:
+    add_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PropertyChanged(PropertyChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    get_IsDefault(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_TextAutoHide(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextAutoHide(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextAutoHide(): PrivateScope, Public, HideBySig
+    get_TextClose(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextClose(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextClose(): PrivateScope, Public, HideBySig
+    get_TextCloseAllButThis(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextCloseAllButThis(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextCloseAllButThis(): PrivateScope, Public, HideBySig
+    get_TextDock(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextDock(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextDock(): PrivateScope, Public, HideBySig
+    get_TextFloat(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextFloat(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextFloat(): PrivateScope, Public, HideBySig
+    get_TextHide(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextHide(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextHide(): PrivateScope, Public, HideBySig
+    get_TextTabbedDocument(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextTabbedDocument(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextTabbedDocument(): PrivateScope, Public, HideBySig
+    get_TextWindowLocation(): PrivateScope, Public, HideBySig, SpecialName
+    set_TextWindowLocation(String): PrivateScope, Public, HideBySig, SpecialName
+    ResetTextWindowLocation(): PrivateScope, Public, HideBySig

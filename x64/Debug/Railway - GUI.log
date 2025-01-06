@@ -1,0 +1,12 @@
+﻿  MyForm.cpp
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(56,19): warning C4947: 'System::Data::OracleClient::OracleConnection': marked as obsolete
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(56,19): message : Message: 'OracleConnection has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260'
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(7002,19): warning C4566: character represented by universal-character-name '\u21D3' cannot be represented in the current code page (1256)
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(56,25): warning C4947: 'System::Data::OracleClient::OracleConnection': marked as obsolete
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(56,25): message : Message: 'OracleConnection has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260'
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(56,49): warning C4996: 'System::Data::OracleClient::OracleConnection::OracleConnection': was declared deprecated
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(6935,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(7523,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\HP\Desktop\Railway - GUI - Copy (98)\MyForm.h(7564,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  Railway - GUI.vcxproj -> C:\Users\HP\Desktop\Railway - GUI - Copy (98)\x64\Debug\Railway - GUI.exe
